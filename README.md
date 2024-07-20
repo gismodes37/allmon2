@@ -14,7 +14,7 @@ Los usuarios que hayan iniciado sesión pueden realizar conexiones y desconexion
 
 Allmon también monitoreará a los clientes VOTANTES. Cada instancia de VOTER muestra una lista de módulos de cliente ligero de radio (RTCM) adjuntos. El RSSI para cada RTCM se muestra en estilo degráfico de barras junto con un color para indicar el RTCM votado actualmente.
 
-Instrucciones de instalación
+Instrucciones de instalación (Acá ira un link a un tutorial personalizado... pronto !)
 
 ­*Si instaló su(s) nodo(s) desde el portal web Allstarlink y nunca a tocado la línea de comando, tienes una curva de aprendizaje bastante pronunciada por delante. Por otro lado, si conoce Apache y Linux, la 
 instalación debería ser pan comido.
