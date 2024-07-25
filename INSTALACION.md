@@ -121,7 +121,7 @@ repeater@repeater:/var/www/html/allmon2$ sudo nano allmon.ini.php
 
 >Busca los corchetes [500] y cambia el 500 por el número de tu nodo. Por ejemplo, si tu número de nodo es 12345, cambia [500] a [12345].
 
-```sh
+```ini
 [12345]
 host=127.0.0.1:5038
 user=admin
