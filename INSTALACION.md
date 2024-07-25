@@ -31,12 +31,14 @@ repeater@repeater:~$
 repeater@repeater:~$ sudo apt install git -y
 ```
 
+
 **2.- Clonar el repositorio de Allmon2:**
 
 ```sh
 repeater@repeater:~$ cd /var/www/html
 repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git allmon2
 ```
+
 
 **3.- Crear el archivo allmon.ini.php:**
 
@@ -53,11 +55,13 @@ repeater@repeater:/var/www/html/allmon2$ sudo nano allmon.ini.txt
 repeater@repeater:/var/www/html/allmon2$ sudo mv allmon.ini.txt allmon.ini.php
 ```
 
+
 **4.- Renombrar controlpanel.ini.txt:**
 
 ```sh
 repeater@repeater:/var/www/html/allmon2$ sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
+
 
 **5.- Actualizar referencias en los archivos:**
 
@@ -67,11 +71,13 @@ repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink /g' hea
 repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' link.php
 ```
 
+
 **6.- Hacer astdb.php ejecutable:**
 
 ```sh
 repeater@repeater:/var/www/html/allmon2$ sudo chmod +x astdb.php
 ```
+
 
 **7.- Configurar la autenticación HTTP:**
 
@@ -81,11 +87,13 @@ repeater@repeater:/var/www/html/allmon2$ sudo htpasswd -cB /var/www/html/allmon2
 
 >Se te pedirá que ingreses una contraseña para el usuario admin.
 
+
 **8.- Ejecutar manualmente el script astdb.php para configurar la base de datos:**
 
 ```sh
 repeater@repeater:/var/www/html/allmon2$ sudo ./astdb.php
 ```
+
 
 **9.- Agregar una tarea a crontab:**
 
@@ -99,6 +107,7 @@ repeater@repeater:/var/www/html/allmon2$ sudo nano /etc/crontab
 01 03   * * *   root cd /var/www/html/allmon2; ./astdb.php
 ```
 
+
 **10.- Reiniciar el nodo:**
 
 ```sh
@@ -110,6 +119,8 @@ repeater@repeater:~$ sudo reboot
 
 >Si llegaste a esta etapa, quiere decir que ya lograste instalar Allmon2. Ahora toca configurar la aplicación web para que funcione correctamente y puedas manejar tu nodo.
 
+
+
 **1.- Editar el archivo allmon.ini.php:**
 
 ```sh
@@ -117,11 +128,12 @@ repeater@repeater:~$ cd /var/www/html/allmon2
 repeater@repeater:/var/www/html/allmon2$ sudo nano allmon.ini.php
 ```
 
+
 **2.- Configurar el nodo:**
 
 >Busca los corchetes [500] y cambia el 500 por el número de tu nodo. Por ejemplo, si tu número de nodo es 12345, cambia [500] a [12345].
 
-```ini
+```sh
 [12345]
 host=127.0.0.1:5038
 user=admin
@@ -130,3 +142,38 @@ nomenu=no
 hideNodeURL=no
 menu=yes  # Si no existe esta línea, agrégala
 ```
+
+
+**3.- Guardar el archivo:**
+
+>Presiona Ctrl + X, luego Y (o S en algunos sistemas), y finalmente Enter para guardar y salir del editor.
+
+
+
+**4.- Actualizar los permisos:**
+
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo chmod 755 astdb.php
+```
+
+
+**5.- Hora de probar Allmon2:**
+
+>Abre un navegador web y accede a la dirección IP de tu nodo seguida de /allmon2. Por ejemplo:
+
+```url
+http://192.168.x.x/allmon2
+```
+
+>Inicia sesión con el usuario admin y la contraseña que configuraste durante la instalación.
+
+```plaintext
+Usuario: admin
+Contraseña: la que pusiste durante la instalación
+```
+
+
+**6.- Felicidades:**
+
+>Ya tienes funcionando Allmon2 conectado a tu nodo AllStar Link. Felicitaciones. Ahora tenemos que habilitar una aplicación que reconozca nuestra configuración de audio del equipo y nos permita hablar. Esta aplicación se llama iaxRpt.
+
