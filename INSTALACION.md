@@ -40,7 +40,7 @@ repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Al
 
 **3.- Crear el archivo allmon.ini.php:**
 
->Ve al repositorio de Github: allmon.ini.txt, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
+>Ve al repositorio de Github: <a href="https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt" style="background-color: white;" target="_blank"><span style="color: black;">https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt</span></a>, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
 
 ```sh
 repeater@repeater:~$ cd /var/www/html/allmon2
