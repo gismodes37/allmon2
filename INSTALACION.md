@@ -1,17 +1,17 @@
-**Instalación de Allmon2  -  Paso a Paso**
+**Instalación de Allmon2  -  Paso a Paso - CA2IIG**
 
 
 **Allmon**  
 >Allmon es un sitio web para administrar uno o más nodos app_rpt ( también conocido como All Star Link ). Cada nodo local administrado muestra una lista de nodos conectados. La lista está ordenada en orden inverso al nodo recibido más recientemente. Entonces, el último nodo en hablar siempre está al principio de la lista. Cualquier nodo que se esté recibiendo actualmente se resaltará con un fondo verde y se moverá a la parte superior de la lista. La lista de nodos se actualiza una vez por segundo y proporciona un estado casi en tiempo real. 
-
+<div class="separator" style="clear: both; text-align: center;"><a><img alt="" data-original-height="372" data-original-width="783" height="219" src="https://blogger.googleusercontent.com/img/a/AVvXsEicxmZ8G34OajNSWp74Io1Ce04mbFsPqpmQWt8n3tl52N1iA7fufEDQuhuArlANLYOk5Int8_6iCeejkRa8PXpq4h5hhkN83pMRxVJu0_84ItxM64fT4eGp91cmmy2U8hR7UUf1i52UajSc42sbnNPWCx_M0O3_ApQ-fddguVDNQQdHlRgZm3Y7rDWgL7GE=w461-h219" width="461" /></a></div>
 
 **Notas Previas**
 
->Este proyecto lo realice en una máquina virtual montada y administrada con el **Software VMWare Worhstation**, esta máquina virtual está sobre **Windows 11**, de esta forma el nodo All Star Link es totalmente funcional y fue configurado para operar con un simple micrófono de PC y la aplicación iaxRpt.
+>Este proyecto lo realice en una máquina virtual montada y administrada con el Software VMWare Worhstation, esta máquina virtual está sobre Windows 11, de esta forma el nodo All Star Link es totalmente funcional y fue configurado para operar con un simple micrófono de PC y la aplicación iaxRpt.
 
 >Cabe señalar que esta instalación requiere conocimientos de manejo de terminal y comandos Linux en Debian
 
->Para realizar este tutorial, tenemos que tener ya instalado un **Nodo All Star Link configurado y funcionando*, queda sobreentendido que Allmon es una Aplicación Web de administración de Nodos All Star Link. (enlace al tutorial de instalación de un Nodo All Star Link) y explicaremos la instalación de Allmon en su versión N° 2
+>Para realizar este tutorial, tenemos que tener ya instalado un nodo All Star Link configurado y funcionando, queda sobreentendido que Allmon es una Aplicación Web de administración de Nodos All Star Link. (enlace al tutorial de instalación de un Nodo All Star Link) y explicaremos la instalación de Allmon en su versión N° 2
 
 >Al final de este tutorial dejaré la Zona de Descargas con todos los programas necesarios para realizar este tutorial.
 
@@ -40,7 +40,7 @@ repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Al
 
 **3.- Crear el archivo allmon.ini.php:**
 
->Ve al repositorio de Github: <a href="https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt" style="background-color: white;" target="_blank"><span style="color: black;">https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt</span></a>, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
+>Ve al repositorio de Github: allmon.ini.txt, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
 
 ```sh
 repeater@repeater:~$ cd /var/www/html/allmon2
@@ -106,4 +106,5 @@ repeater@repeater:~$ sudo reboot
 ```
 
 
+**Configuración de Allmon2**
 
