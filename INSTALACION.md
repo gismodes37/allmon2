@@ -69,8 +69,41 @@ repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.
 
 **6.- Hacer astdb.php ejecutable:**
 
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo chmod +x astdb.php
+```
 
+**7.- Configurar la autenticación HTTP:**
 
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
+```
+
+>Se te pedirá que ingreses una contraseña para el usuario admin.
+
+**8.- Ejecutar manualmente el script astdb.php para configurar la base de datos:**
+
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo ./astdb.php
+```
+
+**9.- Agregar una tarea a crontab:**
+
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo nano /etc/crontab
+```
+
+>Al final del archivo agrega la siguiente línea:
+
+```sh
+01 03   * * *   root cd /var/www/html/allmon2; ./astdb.php
+```
+
+**10.- Reiniciar el nodo:**
+
+```sh
+repeater@repeater:~$ sudo reboot
+```
 
 
 
