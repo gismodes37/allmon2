@@ -177,3 +177,7 @@ Contraseña: la que pusiste durante la instalación
 
 >Ya tienes funcionando Allmon2 conectado a tu nodo AllStar Link. Felicitaciones. Ahora tenemos que habilitar una aplicación que reconozca nuestra configuración de audio del equipo y nos permita hablar. Esta aplicación se llama iaxRpt.
 
+>Si necesitas más ayuda con la configuración de iaxRpt o cualquier otra parte de la configuración, no dudes en preguntar, contacto@ce2rpe.com.
+Guillermo
+CA2IIG
+
