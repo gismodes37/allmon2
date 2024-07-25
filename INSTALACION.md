@@ -38,4 +38,39 @@ repeater@repeater:~$ cd /var/www/html
 repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git allmon2
 ```
 
+**3.- Crear el archivo allmon.ini.php:**
+
+>Ve al repositorio de Github: allmon.ini.txt, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
+
+```sh
+repeater@repeater:~$ cd /var/www/html/allmon2
+repeater@repeater:/var/www/html/allmon2$ sudo nano allmon.ini.txt
+```
+
+>Pega el contenido copiado en el archivo allmon.ini.txt que creaste y guarda el archivo.
+
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo mv allmon.ini.txt allmon.ini.php
+```
+
+**4.- Renombrar controlpanel.ini.txt:**
+
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo mv controlpanel.ini.txt controlpanel.ini.php
+```
+
+**5.- Actualizar referencias en los archivos:**
+
+```sh
+repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' astdb.php
+repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink /g' header.inc
+repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' link.php
+```
+
+**6.- Hacer astdb.php ejecutable:**
+
+
+
+
+
 
