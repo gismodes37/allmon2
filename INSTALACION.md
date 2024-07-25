@@ -93,7 +93,7 @@ repeater@repeater:/var/www/html/allmon2$ sudo ./astdb.php
 repeater@repeater:/var/www/html/allmon2$ sudo nano /etc/crontab
 ```
 
->Al final del archivo agrega la siguiente línea:
+-Al final del archivo agrega la siguiente línea:
 
 ```sh
 01 03   * * *   root cd /var/www/html/allmon2; ./astdb.php
