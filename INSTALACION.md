@@ -179,7 +179,7 @@ Contraseña: la que pusiste durante la instalación
 
 >EN LA SIGUIENTE DIRECCION PODEMOS COMPROBAR LA PRESENCIA DE NUESTRO NODO ACTIVO :   http://stats.allstarlink.org/maps/allstarUSAMap.html
 
-## Zona de Descargas
+# Zona de Descargas (Copia y pega en un navegador)
 
 >All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio personal en Mega)
 ```sh
