@@ -13,7 +13,7 @@
 
 >Para realizar este tutorial, tenemos que tener ya instalado un nodo All Star Link configurado y funcionando, queda sobreentendido que Allmon es una Aplicación Web de administración de Nodos All Star Link. (enlace al tutorial de instalación de un Nodo All Star Link) y explicaremos la instalación de Allmon en su versión N° 2
 
->Al final de este tutorial dejaré la Zona de Descargas con todos los programas necesarios para realizar este tutorial.
+>Al final de este tutorial dejaré la **Zona de Descargas** con todos los programas necesarios para realizar este tutorial.
 
 
 >Lo primero que hay que hacer es entrar al nodo con la cuenta de usuario 'repeater' y su contraseña: xxxxx,  desde la línea de comando, ya sea utilizando un teclado y un monitor o por conexión SSH mediante red de forma similar a la que se configuró el nodo.
@@ -42,7 +42,7 @@ repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Al
 
 **3.- Crear el archivo allmon.ini.php:**
 
->Ve al repositorio de Github: allmon.ini.txt, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
+>Ve al repositorio de Github: <a href="https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt" style="background-color: white;" target="_blank"><span style="color: black;">https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt</span></a>, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
 
 ```sh
 repeater@repeater:~$ cd /var/www/html/allmon2
@@ -177,7 +177,38 @@ Contraseña: la que pusiste durante la instalación
 
 >Ya tienes funcionando Allmon2 conectado a tu nodo AllStar Link. Felicitaciones. Ahora tenemos que habilitar una aplicación que reconozca nuestra configuración de audio del equipo y nos permita hablar. Esta aplicación se llama iaxRpt.
 
->Si necesitas más ayuda con la configuración de iaxRpt o cualquier otra parte de la configuración, no dudes en preguntar, contacto@ce2rpe.com.
-Guillermo
+>EN LA SIGUIENTE DIRECCION PODEMOS COMPROBAR LA PRESENCIA DE NUESTRO NODO ACTIVO :   http://stats.allstarlink.org/maps/allstarUSAMap.html
+
+## Zona de Descargas
+
+>All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio personal en Mega)
+```sh
+https://mega.nz/file/6xE0XR6Q#88XI2cwu1uRFWrvfh0fffG4jlSKwvy9f56jnxpIcARY
+```
+
+
+>All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio All Star Link)
+```sh
+https://downloads.allstarlink.org/ASL_Images_Beta/Intel-AMD/asl-2.0.0-beta.6-kc1kcc-20210324-amd64.hybrid.iso
+```
+
+
+>iaxRpt :  (Repositorio personal en Mega)
+```sh
+https://mega.nz/file/fo8kDa6Z#hIZuuHDJrrzfhtDsskh5Wpq8nCu1AR2LjDAT0un09uY
+```
+
+
+>iaxRpt :  (Repositorio All Star Link)
+```sh
+https://wiki.allstarlink.org/images/5/56/Setup_iaxrpt_xipar_010146.exe
+```
+
+
+>Bien, con esto damos por finalizada la instalación de Allmon en su versión N° 2, espero que lo disfrutes para cualquier fallo en la instalación o configuración te recomiendo retroceder a los pasos anteriores y repetir el proceso, si no hay solución me escribes a contacto@ce2rpe.com.
+
 CA2IIG
+Guillermo
+La Serena - Chile
+
 
