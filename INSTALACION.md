@@ -183,7 +183,7 @@ Contraseña: la que pusiste durante la instalación
 # Zona de Descargas (Copia y pega en un navegador)
 
 >All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio personal en Mega)
-```sh
+```link
 https://mega.nz/file/6xE0XR6Q#88XI2cwu1uRFWrvfh0fffG4jlSKwvy9f56jnxpIcARY
 ```
 
