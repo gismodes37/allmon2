@@ -209,7 +209,7 @@ https://wiki.allstarlink.org/images/5/56/Setup_iaxrpt_xipar_010146.exe
 >Bien, con esto damos por finalizada la instalación de Allmon en su versión N° 2, espero que lo disfrutes para cualquier fallo en la instalación o configuración te recomiendo retroceder a los pasos anteriores y repetir el proceso, si no hay solución me escribes a contacto@ce2rpe.com.
 
 CA2IIG
-Guillermo
+Guillermo Ismodes
 La Serena - Chile
 
 
