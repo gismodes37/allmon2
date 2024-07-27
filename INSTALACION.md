@@ -183,25 +183,25 @@ Contraseña: la que pusiste durante la instalación
 # Zona de Descargas (Copia y pega en un navegador)
 
 >All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio personal en Mega)
-```link
+```url
 https://mega.nz/file/6xE0XR6Q#88XI2cwu1uRFWrvfh0fffG4jlSKwvy9f56jnxpIcARY
 ```
 
 
 >All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio All Star Link)
-```link
+```url
 https://downloads.allstarlink.org/ASL_Images_Beta/Intel-AMD/asl-2.0.0-beta.6-kc1kcc-20210324-amd64.hybrid.iso
 ```
 
 
 >iaxRpt :  (Repositorio personal en Mega)
-```sh
+```url
 https://mega.nz/file/fo8kDa6Z#hIZuuHDJrrzfhtDsskh5Wpq8nCu1AR2LjDAT0un09uY
 ```
 
 
 >iaxRpt :  (Repositorio All Star Link)
-```sh
+```url
 https://wiki.allstarlink.org/images/5/56/Setup_iaxrpt_xipar_010146.exe
 ```
 
