@@ -189,7 +189,7 @@ https://mega.nz/file/6xE0XR6Q#88XI2cwu1uRFWrvfh0fffG4jlSKwvy9f56jnxpIcARY
 
 
 >All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio All Star Link)
-```sh
+```link
 https://downloads.allstarlink.org/ASL_Images_Beta/Intel-AMD/asl-2.0.0-beta.6-kc1kcc-20210324-amd64.hybrid.iso
 ```
 
