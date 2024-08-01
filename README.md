@@ -36,8 +36,8 @@ sudo apt install git -y
 **2.- Clonar el repositorio de Allmon2:**
 
 ```sh
-repeater@repeater:~$ cd /var/www/html
-repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git allmon2
+repeater@repeater:~$ cd /var/www/html/allmon2
+repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git 
 ```
 
 
