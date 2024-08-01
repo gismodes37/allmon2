@@ -29,7 +29,7 @@ repeater@repeater:~$
 **1.- Instalar Git:**
 
 ```sh
-repeater@repeater:~$ sudo apt install git -y
+sudo apt install git -y
 ```
 
 
