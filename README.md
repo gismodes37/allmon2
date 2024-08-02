@@ -20,6 +20,8 @@
 
 >Lo primero que hay que hacer es entrar al nodo con la cuenta de usuario 'repeater' y su contraseña: xxxxx,  desde la línea de comando, ya sea utilizando un teclado y un monitor o por conexión SSH mediante red de forma similar a la que se configuró el nodo.
 
+>Es importante mencionar que algunos de los comandos requieren permisos de superusuario 'sudo' . Asegúrate de que el usuario con el que estas trabajando tenga los privilegios necesarios de lo contrario no puede faltar el comando 'sudo' presediendo cualquier comando de ejecución.
+
 ```sh
 repeater@repeater:~$  
 ``` 
