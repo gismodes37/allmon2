@@ -48,7 +48,7 @@ sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 <br>
 **3.- Crear el archivo allmon.ini.php:**
 
->Ve al repositorio de Github: , [copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación - Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt").
+>Ve al repositorio de Github: , [y copia el contenido del archivo, pégalo en un archivo con el mismo nombre en tu instalación - Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt").
 
 ```sh
 cd /var/www/html/allmon2
