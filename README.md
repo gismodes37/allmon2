@@ -26,6 +26,12 @@ repeater@repeater:~$
 
 ## Primeros pasos:
 
+```sh
+sudo apt update
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php -y
+```
+
 **1.- Instalar Git:**
 
 ```sh
@@ -39,7 +45,6 @@ sudo apt install git -y
 repeater@repeater:~$ cd /var/www/html
 repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git allmon2
 ```
-
 
 **3.- Crear el archivo allmon.ini.php:**
 
@@ -67,16 +72,16 @@ repeater@repeater:/var/www/html/allmon2$ sudo mv controlpanel.ini.txt controlpan
 **5.- Actualizar referencias en los archivos:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' astdb.php
-repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink /g' header.inc
-repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' link.php
+repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
+repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
+repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 ```
 
 
 **6.- Hacer astdb.php ejecutable:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo chmod +x astdb.php
+repeater@repeater:/var/www/html/allmon2$ sudo chmod +x /var/www/html/allmon2/astdb.php
 ```
 
 
@@ -92,9 +97,9 @@ repeater@repeater:/var/www/html/allmon2$ sudo htpasswd -cB /var/www/html/allmon2
 **8.- Ejecutar manualmente el script astdb.php para configurar la base de datos:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo ./astdb.php
+cd /var/www/html/allmon2
+repeater@repeater:/var/www/html/allmon2$ sudo astdb.php
 ```
-
 
 **9.- Agregar una tarea a crontab:**
 
@@ -105,7 +110,7 @@ repeater@repeater:/var/www/html/allmon2$ sudo nano /etc/crontab
 >Al final del archivo agrega la siguiente línea:
 
 ```sh
-01 03   * * *   root cd /var/www/html/allmon2; ./astdb.php
+01 03   * * *   root cd /var/www/html/allmon2; astdb.php
 ```
 
 
@@ -119,7 +124,6 @@ repeater@repeater:~$ sudo reboot
 # Configuración de Allmon2
 
 >Si llegaste a esta etapa, quiere decir que ya lograste instalar Allmon2. Ahora toca configurar la aplicación web para que funcione correctamente y puedas manejar tu nodo.
-
 
 
 **1.- Editar el archivo allmon.ini.php:**
@@ -149,7 +153,12 @@ menu=yes  # Si no existe esta línea, agrégala
 
 >Presiona Ctrl + X, luego Y (o S en algunos sistemas), y finalmente Enter para guardar y salir del editor.
 
+>A continuación, ingresa los siguientes comandos:
 
+```sh
+mv -f /var/www/html/allmon2/allmon.ini.php $WEBROOT/allmon2/allmon.ini.php.$DATEEXT 2>/dev/null #backup default
+cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev/null #copy what node-setup script created
+```
 
 **4.- Actualizar los permisos:**
 
