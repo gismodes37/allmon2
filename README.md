@@ -139,6 +139,8 @@ sudo reboot
 
 <br>
 
+***
+
 # Configuración de Allmon2
 
 >Si llegaste a esta etapa, quiere decir que ya lograste instalar Allmon2. Ahora toca configurar la aplicación web para que funcione correctamente y puedas manejar tu nodo.
