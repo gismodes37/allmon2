@@ -52,20 +52,20 @@ cd /var/www/html/allmon2
 
 ```sh
 cd /var/www/html/allmon2
-/var/www/html/allmon2$ sudo nano allmon.ini.txt
+sudo nano allmon.ini.txt
 ```
 
 >Pega el contenido copiado en el archivo allmon.ini.txt que creaste y guarda el archivo.
 
 ```sh
-/var/www/html/allmon2$ sudo mv allmon.ini.txt allmon.ini.php
+sudo mv allmon.ini.txt allmon.ini.php
 ```
 
 
 **4.- Renombrar controlpanel.ini.txt:**
 
 ```sh
-/var/www/html/allmon2$ sudo mv controlpanel.ini.txt controlpanel.ini.php
+sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
 
 
