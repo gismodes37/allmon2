@@ -99,9 +99,27 @@ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 sudo chmod +x /var/www/html/allmon2/astdb.php
 ```
 
+>Edita el siguiente archivo con:
+
+```sh
+cd /var/www/html/allmon2$
+sudo nano astdb.php
+```
+
+>Reemplaza la linea: 
+```sh
+$url = "https://allstarlink.org/cgi-bin/allmondb.pl";
+```
+
+>con:
+
+```sh
+$url = "http://allmondb.pttlink.org";
+```
+
 <br>
 
-### 7.- Configurar la autenticación HTTP: dentro de `/var/www/html/allmon2$`
+### 7.- Configurar la autenticación HTTP: dentro de `/var/www/html/allmon2$` y agrega tu contraseña
 
 ```sh
 sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
