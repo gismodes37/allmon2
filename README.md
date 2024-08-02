@@ -42,8 +42,8 @@ sudo apt install git -y
 **2.- Clonar el repositorio de Allmon2:**
 
 ```sh
-repeater@repeater:~$ cd /var/www/html
-repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git allmon2
+cd /var/www/html
+/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git allmon2
 ```
 
 **3.- Crear el archivo allmon.ini.php:**
@@ -51,44 +51,44 @@ repeater@repeater:/var/www/html$ sudo git clone https://github.com/gismodes37/Al
 >Ve al repositorio de Github: <a href="https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt" style="background-color: white;" target="_blank"><span style="color: black;">https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt</span></a>, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
 
 ```sh
-repeater@repeater:~$ cd /var/www/html/allmon2
-repeater@repeater:/var/www/html/allmon2$ sudo nano allmon.ini.txt
+cd /var/www/html/allmon2
+/var/www/html/allmon2$ sudo nano allmon.ini.txt
 ```
 
 >Pega el contenido copiado en el archivo allmon.ini.txt que creaste y guarda el archivo.
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo mv allmon.ini.txt allmon.ini.php
+/var/www/html/allmon2$ sudo mv allmon.ini.txt allmon.ini.php
 ```
 
 
 **4.- Renombrar controlpanel.ini.txt:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo mv controlpanel.ini.txt controlpanel.ini.php
+/var/www/html/allmon2$ sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
 
 
 **5.- Actualizar referencias en los archivos:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
-repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
-repeater@repeater:/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
+/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
+/var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
+/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 ```
 
 
 **6.- Hacer astdb.php ejecutable:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo chmod +x /var/www/html/allmon2/astdb.php
+/var/www/html/allmon2$ sudo chmod +x /var/www/html/allmon2/astdb.php
 ```
 
 
 **7.- Configurar la autenticación HTTP:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
+/var/www/html/allmon2$ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
 ```
 
 >Se te pedirá que ingreses una contraseña para el usuario admin.
@@ -98,13 +98,13 @@ repeater@repeater:/var/www/html/allmon2$ sudo htpasswd -cB /var/www/html/allmon2
 
 ```sh
 cd /var/www/html/allmon2
-repeater@repeater:/var/www/html/allmon2$ sudo astdb.php
+/var/www/html/allmon2$ sudo astdb.php
 ```
 
 **9.- Agregar una tarea a crontab:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo nano /etc/crontab
+/var/www/html/allmon2$ sudo nano /etc/crontab
 ```
 
 >Al final del archivo agrega la siguiente línea:
@@ -117,7 +117,7 @@ repeater@repeater:/var/www/html/allmon2$ sudo nano /etc/crontab
 **10.- Reiniciar el nodo:**
 
 ```sh
-repeater@repeater:~$ sudo reboot
+sudo reboot
 ```
 
 
@@ -129,8 +129,8 @@ repeater@repeater:~$ sudo reboot
 **1.- Editar el archivo allmon.ini.php:**
 
 ```sh
-repeater@repeater:~$ cd /var/www/html/allmon2
-repeater@repeater:/var/www/html/allmon2$ sudo nano allmon.ini.php
+cd /var/www/html/allmon2
+/var/www/html/allmon2$ sudo nano allmon.ini.php
 ```
 
 
@@ -163,7 +163,7 @@ cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev
 **4.- Actualizar los permisos:**
 
 ```sh
-repeater@repeater:/var/www/html/allmon2$ sudo chmod 755 astdb.php
+/var/www/html/allmon2$ sudo chmod 755 astdb.php
 ```
 
 
