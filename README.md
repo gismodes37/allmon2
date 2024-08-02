@@ -20,7 +20,7 @@
 
 >Lo primero que hay que hacer es entrar al nodo con la cuenta de usuario 'repeater' y su contraseña: xxxxx,  desde la línea de comando, ya sea utilizando un teclado y un monitor o por conexión SSH mediante red de forma similar a la que se configuró el nodo.
 
->Es importante mencionar que algunos de los comandos requieren permisos de superusuario `sudo` . Asegúrate de que el usuario con el que estas trabajando tenga los privilegios necesarios de lo contrario no puede faltar el comando `sudo` presediendo cualquier comando de ejecución.
+>Es importante mencionar que algunos de los comandos requieren permisos de superusuario `sudo` . Asegúrate de que el usuario con el que estás trabajando tenga los privilegios necesarios de lo contrario no puede faltar el comando `sudo` precediendo cualquier comando de ejecución.
 
 ```sh
 repeater@repeater:~$  
@@ -79,7 +79,7 @@ sudo mv controlpanel.ini.txt controlpanel.ini.php
 
 <br>
 
-### 5.- Actualizar referencias en los archivos: dentro de `/var/www/html/allmon2$`
+### 5.- Actualizar referencias en los archivos dentro de : `/var/www/html/allmon2$`
 
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
@@ -93,25 +93,25 @@ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 
 <br>
 
-### 6.- Hacer astdb.php ejecutable: dentro de `/var/www/html/allmon2$`
+### 6.- Hacer astdb.php ejecutable dentro de : `/var/www/html/allmon2$`
 
 ```sh
 sudo chmod +x /var/www/html/allmon2/astdb.php
 ```
 
->Edita el siguiente archivo con:
+>Edita el siguiente archivo con :
 
 ```sh
 cd /var/www/html/allmon2$
 sudo nano astdb.php
 ```
 
->Reemplaza la linea: 
+>Reemplaza la linea : 
 ```sh
 $url = "https://allstarlink.org/cgi-bin/allmondb.pl";
 ```
 
->con:
+>con :
 
 ```sh
 $url = "http://allmondb.pttlink.org";
@@ -119,7 +119,7 @@ $url = "http://allmondb.pttlink.org";
 
 <br>
 
-### 7.- Configurar la autenticación HTTP: dentro de `/var/www/html/allmon2$` y agrega tu contraseña
+### 7.- Configurar la autenticación HTTP dentro de : `/var/www/html/allmon2$` y agrega tu contraseña
 
 ```sh
 sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
@@ -137,13 +137,13 @@ sudo astdb.php
 ```
 <br>
 
-### 9.- Agregar una tarea a crontab:
+### 9.- Agregar una tarea a crontab :
 
 ```sh
 sudo nano /etc/crontab
 ```
 
->Al final del archivo agrega la siguiente línea:
+>Al final del archivo agrega la siguiente línea :
 
 ```sh
 01 03   * * *   root    cd /var/www/html/allmon2; astdb.php
@@ -151,7 +151,7 @@ sudo nano /etc/crontab
 
 <br>
 
-### 10.- Reiniciar el nodo:
+### 10.- Reiniciar el nodo :
 
 ```sh
 sudo reboot
@@ -176,7 +176,7 @@ sudo nano allmon.ini.php
 
 <br>
 
-### 2.- Configurar el nodo:
+### 2.- Configurar el nodo :
 
 >Busca los corchetes [500] y cambia el 500 por el número de tu nodo. Por ejemplo, si tu número de nodo es 12345, cambia [500] a [12345].
 
@@ -189,13 +189,13 @@ nomenu=no
 hideNodeURL=no
 menu=yes  # Si no existe esta línea, agrégala
 ```
->Guardar el archivo:
+>Guardar el archivo :
 
 >Presiona Ctrl + X, luego Y (o S en algunos sistemas), y finalmente Enter para guardar y salir del editor.
 
 <br>
 
-### 3.- A continuación, ingresa los siguientes comandos:
+### 3.- A continuación, ingresa los siguientes comandos :
 
 ```sh
 mv -f /var/www/html/allmon2/allmon.ini.php $WEBROOT/allmon2/allmon.ini.php.$DATEEXT 2>/dev/null #backup default
@@ -206,7 +206,7 @@ cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev
 ```
 <br>
 
-### 4.- Actualizar los permisos:
+### 4.- Actualizar los permisos :
 
 ```sh
 sudo chmod 755 astdb.php
@@ -214,9 +214,9 @@ sudo chmod 755 astdb.php
 
 <br>
 
-### 5.- Hora de probar Allmon2:
+### 5.- Hora de probar Allmon2 :
 
->Abre un navegador web y accede a la dirección IP de tu nodo seguida de /allmon2. Por ejemplo:
+>Abre un navegador web y accede a la dirección IP de tu nodo seguida de /allmon2. Por ejemplo :
 
 ```url
 http://192.168.x.x/allmon2
@@ -232,7 +232,7 @@ Contraseña: la que pusiste durante la instalación
 
 <br>
 
-### 6.- Felicidades:
+### 6.- Felicidades :
 
 >Ya tienes funcionando Allmon2 conectado a tu nodo AllStar Link. Felicitaciones. Ahora tenemos que habilitar una aplicación que reconozca nuestra configuración de audio del equipo y nos permita hablar. Esta aplicación se llama iaxRpt.
 
