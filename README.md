@@ -179,6 +179,9 @@ menu=yes  # Si no existe esta línea, agrégala
 
 ```sh
 mv -f /var/www/html/allmon2/allmon.ini.php $WEBROOT/allmon2/allmon.ini.php.$DATEEXT 2>/dev/null #backup default
+```
+
+```sh
 cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev/null #copy what node-setup script created
 ```
 <br>
