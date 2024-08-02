@@ -33,7 +33,7 @@ sudo apt install php libapache2-mod-php -y
 ```
 <br>
 
-## 1.- Instalar Git:
+### 1.- Instalar Git:
 
 ```sh
 sudo apt install git -y
