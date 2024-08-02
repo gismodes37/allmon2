@@ -69,30 +69,30 @@ sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
 
 
-**5.- Actualizar referencias en los archivos:**
+**5.- Actualizar referencias en los archivos: dentro de /var/www/html/allmon2$ **
 
 ```sh
-/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
+sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
 ```
 ```sh
-/var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
+sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
 ```
 ```sh
-/var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
-```
-
-
-**6.- Hacer astdb.php ejecutable:**
-
-```sh
-/var/www/html/allmon2$ sudo chmod +x /var/www/html/allmon2/astdb.php
+sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 ```
 
 
-**7.- Configurar la autenticación HTTP:**
+**6.- Hacer astdb.php ejecutable: dentro de /var/www/html/allmon2$**
 
 ```sh
-/var/www/html/allmon2$ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
+sudo chmod +x /var/www/html/allmon2/astdb.php
+```
+
+
+**7.- Configurar la autenticación HTTP: dentro de /var/www/html/allmon2$**
+
+```sh
+sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
 ```
 
 >Se te pedirá que ingreses una contraseña para el usuario admin.
