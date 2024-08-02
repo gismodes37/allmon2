@@ -73,7 +73,11 @@ sudo mv controlpanel.ini.txt controlpanel.ini.php
 
 ```sh
 /var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
+```
+```sh
 /var/www/html/allmon2$ sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
+```
+```sh
 /var/www/html/allmon2$ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 ```
 
