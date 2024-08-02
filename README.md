@@ -51,7 +51,7 @@ sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 ```
 <br>
 
-### 3.- Crear el archivo :**  `allmon.ini.php`
+### 3.- Crear el archivo :  `allmon.ini.php`
 
 >Ve al repositorio de Github: , [y copia el contenido del archivo, pégalo en un archivo con el mismo nombre en tu instalación - Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt").
 
@@ -61,7 +61,7 @@ sudo nano allmon.ini.txt
 ```
 <br>
 
->Pega el contenido copiado en el archivo allmon.ini.txt que creaste y guarda el archivo.
+>Pega el contenido copiado en el archivo  `allmon.ini.txt`  que creaste y guarda el archivo.
 
 ```sh
 sudo mv allmon.ini.txt allmon.ini.php
@@ -69,7 +69,7 @@ sudo mv allmon.ini.txt allmon.ini.php
 
 <br>
 
-### 4.- Renombrar controlpanel.ini.txt:
+### 4.- Renombrar :  `controlpanel.ini.txt`
 
 ```sh
 sudo mv controlpanel.ini.txt controlpanel.ini.php
@@ -77,7 +77,7 @@ sudo mv controlpanel.ini.txt controlpanel.ini.php
 
 <br>
 
-### 5.- Actualizar referencias en los archivos: dentro de /var/www/html/allmon2$ 
+### 5.- Actualizar referencias en los archivos: dentro de `/var/www/html/allmon2$`
 
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
@@ -91,7 +91,7 @@ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 
 <br>
 
-### 6.- Hacer astdb.php ejecutable: dentro de /var/www/html/allmon2$
+### 6.- Hacer astdb.php ejecutable: dentro de `/var/www/html/allmon2$`
 
 ```sh
 sudo chmod +x /var/www/html/allmon2/astdb.php
@@ -99,7 +99,7 @@ sudo chmod +x /var/www/html/allmon2/astdb.php
 
 <br>
 
-### 7.- Configurar la autenticación HTTP: dentro de /var/www/html/allmon2$
+### 7.- Configurar la autenticación HTTP: dentro de `/var/www/html/allmon2$`
 
 ```sh
 sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
@@ -109,7 +109,7 @@ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
 
 <br>
 
-### 8.- Ejecutar manualmente el script astdb.php para configurar la base de datos:
+### 8.- Ejecutar manualmente el script `astdb.php` para configurar la base de datos:
 
 ```sh
 cd /var/www/html/allmon2
@@ -145,7 +145,7 @@ sudo reboot
 
 <br>
 
-### 1.- Editar el archivo allmon.ini.php:
+### 1.- Editar el archivo : `allmon.ini.php`
 
 ```sh
 cd /var/www/html/allmon2
