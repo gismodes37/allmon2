@@ -31,21 +31,21 @@ sudo apt update
 sudo apt install apache2 -y
 sudo apt install php libapache2-mod-php -y
 ```
-
+<br>
 **1.- Instalar Git:**
 
 ```sh
 sudo apt install git -y
 ```
 
-
+<br>
 **2.- Clonar el repositorio de Allmon2:**
 
 ```sh
 cd /var/www/html/allmon2
 sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 ```
-
+<br>
 **3.- Crear el archivo allmon.ini.php:**
 
 >Ve al repositorio de Github: <a href="https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt" style="background-color: white;" target="_blank"><span style="color: black;">https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt</span></a>, copia el contenido del archivo y pégalo en un archivo con el mismo nombre en tu instalación.
@@ -54,21 +54,21 @@ sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 cd /var/www/html/allmon2
 sudo nano allmon.ini.txt
 ```
-
+<br>
 >Pega el contenido copiado en el archivo allmon.ini.txt que creaste y guarda el archivo.
 
 ```sh
 sudo mv allmon.ini.txt allmon.ini.php
 ```
 
-
+<br>
 **4.- Renombrar controlpanel.ini.txt:**
 
 ```sh
 sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
 
-
+<br>
 **5.- Actualizar referencias en los archivos: dentro de /var/www/html/allmon2$ **
 
 ```sh
@@ -81,14 +81,14 @@ sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 ```
 
-
+<br>
 **6.- Hacer astdb.php ejecutable: dentro de /var/www/html/allmon2$**
 
 ```sh
 sudo chmod +x /var/www/html/allmon2/astdb.php
 ```
 
-
+<br>
 **7.- Configurar la autenticación HTTP: dentro de /var/www/html/allmon2$**
 
 ```sh
@@ -97,14 +97,14 @@ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
 
 >Se te pedirá que ingreses una contraseña para el usuario admin.
 
-
+<br>
 **8.- Ejecutar manualmente el script astdb.php para configurar la base de datos:**
 
 ```sh
 cd /var/www/html/allmon2
 /var/www/html/allmon2$ sudo astdb.php
 ```
-
+<br>
 **9.- Agregar una tarea a crontab:**
 
 ```sh
@@ -117,19 +117,19 @@ cd /var/www/html/allmon2
 01 03   * * *   root cd /var/www/html/allmon2; astdb.php
 ```
 
-
+<br>
 **10.- Reiniciar el nodo:**
 
 ```sh
 sudo reboot
 ```
 
-
+<br>
 # Configuración de Allmon2
 
 >Si llegaste a esta etapa, quiere decir que ya lograste instalar Allmon2. Ahora toca configurar la aplicación web para que funcione correctamente y puedas manejar tu nodo.
 
-
+<br>
 **1.- Editar el archivo allmon.ini.php:**
 
 ```sh
@@ -137,7 +137,7 @@ cd /var/www/html/allmon2
 /var/www/html/allmon2$ sudo nano allmon.ini.php
 ```
 
-
+<br>
 **2.- Configurar el nodo:**
 
 >Busca los corchetes [500] y cambia el 500 por el número de tu nodo. Por ejemplo, si tu número de nodo es 12345, cambia [500] a [12345].
@@ -152,7 +152,7 @@ hideNodeURL=no
 menu=yes  # Si no existe esta línea, agrégala
 ```
 
-
+<br>
 **3.- Guardar el archivo:**
 
 >Presiona Ctrl + X, luego Y (o S en algunos sistemas), y finalmente Enter para guardar y salir del editor.
@@ -163,14 +163,14 @@ menu=yes  # Si no existe esta línea, agrégala
 mv -f /var/www/html/allmon2/allmon.ini.php $WEBROOT/allmon2/allmon.ini.php.$DATEEXT 2>/dev/null #backup default
 cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev/null #copy what node-setup script created
 ```
-
+<br>
 **4.- Actualizar los permisos:**
 
 ```sh
 /var/www/html/allmon2$ sudo chmod 755 astdb.php
 ```
 
-
+<br>
 **5.- Hora de probar Allmon2:**
 
 >Abre un navegador web y accede a la dirección IP de tu nodo seguida de /allmon2. Por ejemplo:
@@ -178,7 +178,7 @@ cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev
 ```url
 http://192.168.x.x/allmon2
 ```
-
+<br>
 >Inicia sesión con el usuario admin y la contraseña que configuraste durante la instalación.
 
 ```plaintext
@@ -186,7 +186,7 @@ Usuario: admin
 Contraseña: la que pusiste durante la instalación
 ```
 
-
+<br>
 **6.- Felicidades:**
 
 >Ya tienes funcionando Allmon2 conectado a tu nodo AllStar Link. Felicitaciones. Ahora tenemos que habilitar una aplicación que reconozca nuestra configuración de audio del equipo y nos permita hablar. Esta aplicación se llama iaxRpt.
