@@ -43,7 +43,7 @@ sudo apt install git -y
 
 ```sh
 cd /var/www/html/allmon2
-/var/www/html$ sudo git clone https://github.com/gismodes37/Allmon2-2024.git
+sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 ```
 
 **3.- Crear el archivo allmon.ini.php:**
