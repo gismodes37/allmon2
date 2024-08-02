@@ -169,14 +169,13 @@ nomenu=no
 hideNodeURL=no
 menu=yes  # Si no existe esta línea, agrégala
 ```
-
-<br>
-
-### 3.- Guardar el archivo:
+>Guardar el archivo:
 
 >Presiona Ctrl + X, luego Y (o S en algunos sistemas), y finalmente Enter para guardar y salir del editor.
 
->A continuación, ingresa los siguientes comandos:
+<br>
+
+### 3.- A continuación, ingresa los siguientes comandos:
 
 ```sh
 mv -f /var/www/html/allmon2/allmon.ini.php $WEBROOT/allmon2/allmon.ini.php.$DATEEXT 2>/dev/null #backup default
