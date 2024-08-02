@@ -32,6 +32,7 @@ sudo apt install apache2 -y
 sudo apt install php libapache2-mod-php -y
 ```
 <br>
+
 ## 1.- Instalar Git:
 
 ```sh
@@ -39,6 +40,7 @@ sudo apt install git -y
 ```
 
 <br>
+
 **2.- Clonar el repositorio de Allmon2:**
 
 ```sh
