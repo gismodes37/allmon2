@@ -1,4 +1,8 @@
-# Instalación de Allmon2  -  Paso a Paso - CA2IIG
+# Instalación de Allmon2  -  Paso a Paso - CA2IIG 
+
+<br>
+
+#### Actualizado el 02/08/2024
 
 
 ## Allmon
@@ -41,7 +45,7 @@ sudo apt install git -y
 
 <br>
 
-### 2.- Clonar el repositorio de Allmon2:**
+### 2.- Clonar el repositorio de Allmon2:
 
 ```sh
 cd /var/www/html/allmon2
@@ -67,7 +71,7 @@ sudo mv allmon.ini.txt allmon.ini.php
 
 <br>
 
-### 4.- Renombrar controlpanel.ini.txt:**
+### 4.- Renombrar controlpanel.ini.txt:
 
 ```sh
 sudo mv controlpanel.ini.txt controlpanel.ini.php
@@ -75,7 +79,7 @@ sudo mv controlpanel.ini.txt controlpanel.ini.php
 
 <br>
 
-### 5.- Actualizar referencias en los archivos: dentro de /var/www/html/allmon2$ **
+### 5.- Actualizar referencias en los archivos: dentro de /var/www/html/allmon2$ 
 
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
@@ -89,7 +93,7 @@ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 
 <br>
 
-### 6.- Hacer astdb.php ejecutable: dentro de /var/www/html/allmon2$**
+### 6.- Hacer astdb.php ejecutable: dentro de /var/www/html/allmon2$
 
 ```sh
 sudo chmod +x /var/www/html/allmon2/astdb.php
@@ -97,7 +101,7 @@ sudo chmod +x /var/www/html/allmon2/astdb.php
 
 <br>
 
-### 7.- Configurar la autenticación HTTP: dentro de /var/www/html/allmon2$**
+### 7.- Configurar la autenticación HTTP: dentro de /var/www/html/allmon2$
 
 ```sh
 sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
@@ -107,7 +111,7 @@ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
 
 <br>
 
-### 8.- Ejecutar manualmente el script astdb.php para configurar la base de datos:**
+### 8.- Ejecutar manualmente el script astdb.php para configurar la base de datos:
 
 ```sh
 cd /var/www/html/allmon2
@@ -115,7 +119,7 @@ sudo astdb.php
 ```
 <br>
 
-### 9.- Agregar una tarea a crontab:**
+### 9.- Agregar una tarea a crontab:
 
 ```sh
 sudo nano /etc/crontab
@@ -129,7 +133,7 @@ sudo nano /etc/crontab
 
 <br>
 
-### 10.- Reiniciar el nodo:**
+### 10.- Reiniciar el nodo:
 
 ```sh
 sudo reboot
@@ -143,7 +147,7 @@ sudo reboot
 
 <br>
 
-### 1.- Editar el archivo allmon.ini.php:**
+### 1.- Editar el archivo allmon.ini.php:
 
 ```sh
 cd /var/www/html/allmon2
@@ -152,7 +156,7 @@ sudo nano allmon.ini.php
 
 <br>
 
-### 2.- Configurar el nodo:**
+### 2.- Configurar el nodo:
 
 >Busca los corchetes [500] y cambia el 500 por el número de tu nodo. Por ejemplo, si tu número de nodo es 12345, cambia [500] a [12345].
 
@@ -168,7 +172,7 @@ menu=yes  # Si no existe esta línea, agrégala
 
 <br>
 
-### 3.- Guardar el archivo:**
+### 3.- Guardar el archivo:
 
 >Presiona Ctrl + X, luego Y (o S en algunos sistemas), y finalmente Enter para guardar y salir del editor.
 
@@ -180,7 +184,7 @@ cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev
 ```
 <br>
 
-### 4.- Actualizar los permisos:**
+### 4.- Actualizar los permisos:
 
 ```sh
 sudo chmod 755 astdb.php
@@ -188,7 +192,7 @@ sudo chmod 755 astdb.php
 
 <br>
 
-### 5.- Hora de probar Allmon2:**
+### 5.- Hora de probar Allmon2:
 
 >Abre un navegador web y accede a la dirección IP de tu nodo seguida de /allmon2. Por ejemplo:
 
@@ -206,7 +210,7 @@ Contraseña: la que pusiste durante la instalación
 
 <br>
 
-### 6.- Felicidades:**
+### 6.- Felicidades:
 
 >Ya tienes funcionando Allmon2 conectado a tu nodo AllStar Link. Felicitaciones. Ahora tenemos que habilitar una aplicación que reconozca nuestra configuración de audio del equipo y nos permita hablar. Esta aplicación se llama iaxRpt.
 
