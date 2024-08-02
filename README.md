@@ -114,7 +114,7 @@ sudo nano /etc/crontab
 >Al final del archivo agrega la siguiente línea:
 
 ```sh
-01 03   * * *   root cd /var/www/html/allmon2; astdb.php
+01 03   * * *   root    cd /var/www/html/allmon2; astdb.php
 ```
 
 <br>
