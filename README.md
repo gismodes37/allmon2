@@ -16,13 +16,13 @@
 
 >Al final de este tutorial dejaré la **Zona de Descargas** con todos los programas necesarios para realizar este tutorial.
 
-
 >Lo primero que hay que hacer es entrar al nodo con la cuenta de usuario 'repeater' y su contraseña: xxxxx,  desde la línea de comando, ya sea utilizando un teclado y un monitor o por conexión SSH mediante red de forma similar a la que se configuró el nodo.
 
 ```sh
 repeater@repeater:~$  
 ``` 
 >Una vez ahí, debes escribir los siguientes comandos. Algunos de ellos tardarán bastante en ejecutarse dependiendo de las prestaciones de la máquina o equipo que estés usando y la velocidad de tu servicio de Internet.
+<br>
 
 ## Primeros pasos:
 
@@ -102,13 +102,13 @@ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
 
 ```sh
 cd /var/www/html/allmon2
-/var/www/html/allmon2$ sudo astdb.php
+sudo astdb.php
 ```
 <br>
 **9.- Agregar una tarea a crontab:**
 
 ```sh
-/var/www/html/allmon2$ sudo nano /etc/crontab
+sudo nano /etc/crontab
 ```
 
 >Al final del archivo agrega la siguiente línea:
@@ -134,7 +134,7 @@ sudo reboot
 
 ```sh
 cd /var/www/html/allmon2
-/var/www/html/allmon2$ sudo nano allmon.ini.php
+sudo nano allmon.ini.php
 ```
 
 <br>
@@ -167,7 +167,7 @@ cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev
 **4.- Actualizar los permisos:**
 
 ```sh
-/var/www/html/allmon2$ sudo chmod 755 astdb.php
+sudo chmod 755 astdb.php
 ```
 
 <br>
