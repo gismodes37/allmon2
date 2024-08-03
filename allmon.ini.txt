@@ -1,7 +1,7 @@
 <?php
-[Links externos]
+[Off-site Link]
 url=http://google.com
-[500] 
+[500]
 host=my.address.com:5038
 user=admin
 passwd=password2
@@ -29,7 +29,7 @@ passwd=password2
 [2000 RTCM]
 system=System2
 rtcmnode=2000
-[Grupo Nodos]
+[Grouped Nodes]
 nodes=500,501,2000
 [2 RTCMs]
 system=System2
