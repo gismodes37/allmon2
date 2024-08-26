@@ -99,7 +99,7 @@ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 sudo chmod +x /var/www/html/allmon2/astdb.php
 ```
 
->Edita el siguiente archivo con :
+>Edita el siguiente archivo con nano o tu editor favorito:
 
 ```sh
 cd /var/www/html/allmon2$
