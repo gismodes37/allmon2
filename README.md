@@ -12,7 +12,7 @@
 
 >Este proyecto lo realice en una máquina virtual montada y administrada con el Software VMWare Worhstation, esta máquina virtual está sobre Windows 11, de esta forma el nodo All Star Link es totalmente funcional y fue configurado para operar con un simple micrófono de PC y la aplicación iaxRpt.
 
->Cabe señalar que esta instalación requiere conocimientos de manejo de terminal y comandos Linux en Debian
+>Cabe señalar que esta instalación requiere conocimientos de manejo de terminal y comandos Linux en Debian 10
 
 >Para realizar este tutorial, tenemos que tener ya instalado un nodo All Star Link configurado y funcionando, queda sobreentendido que Allmon es una Aplicación Web de administración de Nodos All Star Link. [enlace al tutorial de instalación de un Nodo All Star Link](https://wiki-allstarlink-org.translate.goog/wiki/Beginners_Guide?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es-419) y explicaremos la instalación de Allmon en su versión N° 2
 
