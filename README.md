@@ -64,6 +64,7 @@ sudo nano allmon.ini.txt
 <br>
 
 >Pega el contenido copiado en el archivo  `allmon.ini.txt`  que creaste y guarda el archivo.
+>Luego procede a renombrar allmon.ini.txt por allmon.ini.php de la siguiente manera:
 
 ```sh
 sudo mv allmon.ini.txt allmon.ini.php
@@ -71,7 +72,20 @@ sudo mv allmon.ini.txt allmon.ini.php
 
 <br>
 
-### 4.- Renombrar :  `controlpanel.ini.txt`
+### 4.- Crear el archivo :  `controlpanel.ini.txt`
+
+>De la misma forma que el paso anterior, ve al repositorio de Github: , [y copia el contenido del archivo, pégalo en un archivo con el mismo nombre en tu instalación - Click para buscar el contenido del archivo]([https://github.com/gismodes37/Allmon2-2024/blob/main/controlpanel.ini.txt).
+
+```sh
+cd /var/www/html/allmon2
+sudo nano controlpanel.ini.txt
+```
+<br>
+
+>Pega el contenido copiado en el archivo  `controlpanel.ini.txt`  que creaste y guarda el archivo.
+>Luego procede a renombrar controlpanel.ini.txt por controlpanel.ini.php de la siguiente manera:
+
+Renombrar :  `controlpanel.ini.txt`
 
 ```sh
 sudo mv controlpanel.ini.txt controlpanel.ini.php
