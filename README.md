@@ -1,6 +1,6 @@
 # Instalación de Allmon2  -  Paso a Paso - CA2IIG 
 
-#### Actualizado el : 02/08/2024
+#### Actualizado el : 08/12/2024
 
 
 ## Allmon
