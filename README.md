@@ -65,6 +65,7 @@ sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 ```sh
 cd /var/www/html/
 sudo mkdir allmon2
+cd /var/www/html/allmon2
 sudo nano allmon.ini.txt
 ```
 <br>
