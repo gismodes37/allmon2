@@ -56,6 +56,10 @@ sudo git clone https://github.com/gismodes37/allmon2.git
 ### 3.- Renombrar los siguientes archivos: 
 
 ```sh
+cd /var/www/html/
+```
+
+```sh
 sudo mv allmon.ini.txt allmon.ini.php
 ```
 
