@@ -56,7 +56,7 @@ sudo git clone https://github.com/gismodes37/allmon2.git
 ### 3.- Renombrar los siguientes archivos: 
 
 ```sh
-cd /var/www/html/
+cd /var/www/html/allmon2
 ```
 
 ```sh
