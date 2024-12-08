@@ -48,6 +48,7 @@ sudo apt install git -y
 ### 2.- Clonar el repositorio de Allmon2:
 
 ```sh
+cd /var/www/html/
 sudo git clone https://github.com/gismodes37/allmon2.git
 ```
 <br>
