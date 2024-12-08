@@ -74,7 +74,7 @@ sudo nano allmon.ini.txt
 ```
 <br>
 
->Pega el contenido copiado en el archivo  `allmon.ini.txt`  que creaste y guarda el archivo.
+>Pega el contenido copiado en el archivo  `allmon.ini.txt`  que creaste y guarda el archivo: `Ctrl X, Y ó S según corresponda y Enter <┘`.
 >Luego procede a renombrar allmon.ini.txt por allmon.ini.php de la siguiente manera:
 
 ```sh
