@@ -100,7 +100,7 @@ sudo nano controlpanel.ini.txt
 ```
 <br>
 
->Pega el contenido copiado en el archivo  `controlpanel.ini.txt`  que creaste y guarda el archivo.
+>Pega el contenido copiado en el archivo  `controlpanel.ini.txt`  que creaste y guarda el archivo: `Ctrl X, Y ó S según corresponda y Enter <┘`.
 >Luego procede a renombrar controlpanel.ini.txt por controlpanel.ini.php de la siguiente manera:
 
 Renombrar :  `controlpanel.ini.txt`
