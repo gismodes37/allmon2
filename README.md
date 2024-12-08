@@ -154,7 +154,6 @@ cd /var/www/html/allmon2
 sudo nano allmon.ini.php
 ```
 
-<br>
 
 ### 2.- Configurar el nodo :
 
@@ -173,7 +172,6 @@ menu=yes  # Si no existe esta línea, agrégala
 
 >Presiona Ctrl + X, luego Y (o S en algunos sistemas), y finalmente Enter para guardar y salir del editor.
 
-<br>
 
 ### 3.- A continuación, ingresa los siguientes comandos :
 
@@ -184,7 +182,6 @@ mv -f /var/www/html/allmon2/allmon.ini.php $WEBROOT/allmon2/allmon.ini.php.$DATE
 ```sh
 cp -f /usr/local/sbin/allmon.ini.php /var/www/html/allmon2/allmon.ini.php 2>/dev/null #copy what node-setup script created
 ```
-<br>
 
 ### 4.- Actualizar los permisos :
 
@@ -201,7 +198,6 @@ sudo chmod 755 astdb.php
 ```url
 http://192.168.x.x/allmon2
 ```
-<br>
 
 >Inicia sesión con el usuario admin y la contraseña que configuraste durante la instalación.
 
@@ -210,7 +206,6 @@ Usuario: admin
 Contraseña: la que pusiste durante la instalación
 ```
 
-<br>
 
 ### 6.- Felicidades :
 
@@ -218,40 +213,34 @@ Contraseña: la que pusiste durante la instalación
 
 >EN LA SIGUIENTE DIRECCION PODEMOS COMPROBAR LA PRESENCIA DE NUESTRO NODO ACTIVO :   http://stats.allstarlink.org/maps/allstarUSAMap.html
 >
-<br>
 
 # Zona de Descargas (Copia y pega en un navegador)
-<br>
+
 >All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio personal en Mega)
 ```url
 https://mega.nz/file/6xE0XR6Q#88XI2cwu1uRFWrvfh0fffG4jlSKwvy9f56jnxpIcARY
 ```
 
-<br>
 
 >All Star Link  Beta  para PC64bit AMD/Intel :  (Repositorio All Star Link)
 ```url
 https://downloads.allstarlink.org/ASL_Images_Beta/Intel-AMD/asl-2.0.0-beta.6-kc1kcc-20210324-amd64.hybrid.iso
 ```
 
-<br>
 
 >iaxRpt :  (Repositorio personal en Mega)
 ```url
 https://mega.nz/file/fo8kDa6Z#hIZuuHDJrrzfhtDsskh5Wpq8nCu1AR2LjDAT0un09uY
 ```
 
-<br>
 
 >iaxRpt :  (Repositorio All Star Link)
 ```url
 https://wiki.allstarlink.org/images/5/56/Setup_iaxrpt_xipar_010146.exe
 ```
 
-<br>
 
 >Bien, con esto damos por finalizada la instalación de Allmon en su versión N° 2, espero que lo disfrutes para cualquier fallo en la instalación o configuración te recomiendo retroceder a los pasos anteriores y repetir el proceso, si no hay solución me escribes a contacto@pcsupport-stg.com.
-<br>
 
 CA2IIG<br>
 Guillermo Ismodes<br>
