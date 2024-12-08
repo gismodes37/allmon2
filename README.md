@@ -63,7 +63,7 @@ sudo mkdir allmon.ini.txt
 
 >(Abre el siguiente enlace en una nueva pestaña, Recomendado)
 
->Ve al repositorio de Github: , [y copia el contenido del archivo, pégalo en el archivo que acabas de crea en tu instalación - Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt).
+>Ve al repositorio de Github: , [copia el contenido del archivo y pégalo en el archivo que acabas de crea en tu instalación *** Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt).
 
 <br>
 >Ahora abre el archivo de la siguiente manera:
@@ -83,9 +83,16 @@ sudo mv allmon.ini.txt allmon.ini.php
 
 <br>
 
-### 4.- Crear el archivo :  `controlpanel.ini.txt` (Abre el siguiente enlace en una nueva pestaña, Recomendado)
+### 4.- Crear el archivo :  `controlpanel.ini.txt` 
 
->De la misma forma que el paso anterior, ve al repositorio de Github: , [y copia el contenido del archivo, pégalo en un archivo con el mismo nombre en tu instalación - Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/controlpanel.ini.txt).
+```sh
+cd /var/www/html/allmon2
+sudo mkdir controlpanel.ini.txt
+```
+<br>
+>>(Abre el siguiente enlace en una nueva pestaña, Recomendado)
+
+>De la misma forma que el paso anterior, ve al repositorio de Github: , [copia el contenido del archivo y pégalo en el archivo que acabas de crear en tu instalación *** Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/controlpanel.ini.txt).
 
 ```sh
 cd /var/www/html/allmon2
