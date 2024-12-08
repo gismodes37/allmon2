@@ -53,23 +53,7 @@ sudo git clone https://github.com/gismodes37/allmon2.git
 ```
 <br>
 
-### 3.- Crear el archivo :  `allmon.ini.txt` 
-
->(Abre el siguiente enlace en una nueva pestaña, Recomendado)
-
->Ve al repositorio de Github: , [copia el contenido del archivo y pégalo en el archivo que acabas de crea en tu instalación *** Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/allmon.ini.txt).
-
-<br>
->Ahora crea el archivo de la siguiente manera: (De esta manera tambien puedes editar un archivo existente)
-
-```sh
-cd /var/www/html/allmon2
-sudo nano allmon.ini.txt
-```
-<br>
-
->Pega el contenido copiado en el archivo  `allmon.ini.txt`  que creaste y guarda el archivo: `Ctrl X, Y ó S según corresponda y Enter <┘`.
->Luego procede a renombrar allmon.ini.txt por allmon.ini.php de la siguiente manera:
+### 3.- Renombrar los siguientes archivos: 
 
 ```sh
 sudo mv allmon.ini.txt allmon.ini.php
@@ -77,33 +61,13 @@ sudo mv allmon.ini.txt allmon.ini.php
 
 <br>
 
-### 4.- Crear el archivo :  `controlpanel.ini.txt` 
-
->>(Abre el siguiente enlace en una nueva pestaña, Recomendado)
-
->De la misma forma que el paso anterior, ve al repositorio de Github: , [copia el contenido del archivo y pégalo en el archivo que acabas de crear en tu instalación *** Click para buscar el contenido del archivo](https://github.com/gismodes37/Allmon2-2024/blob/main/controlpanel.ini.txt).
-
-<br>
->Ahora crea el archivo de la siguiente manera: (De esta manera tambien puedes editar un archivo existente)
-
-```sh
-cd /var/www/html/allmon2
-sudo nano controlpanel.ini.txt
-```
-<br>
-
->Pega el contenido copiado en el archivo  `controlpanel.ini.txt`  que creaste y guarda el archivo: `Ctrl X, Y ó S según corresponda y Enter <┘`.
->Luego procede a renombrar controlpanel.ini.txt por controlpanel.ini.php de la siguiente manera:
-
-Renombrar :  `controlpanel.ini.txt`
-
 ```sh
 sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
 
 <br>
 
-### 5.- Actualizar referencias en los archivos dentro de : `/var/www/html/allmon2$`
+### 4.- Actualizar referencias en los archivos dentro de : `/var/www/html/allmon2$`
 
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
@@ -117,7 +81,7 @@ sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 
 <br>
 
-### 6.- Hacer astdb.php ejecutable dentro de : `/var/www/html/allmon2$`
+### 5.- Hacer astdb.php ejecutable dentro de : `/var/www/html/allmon2$`
 
 ```sh
 sudo chmod +x /var/www/html/allmon2/astdb.php
@@ -143,7 +107,7 @@ $url = "http://allmondb.pttlink.org";
 
 <br>
 
-### 7.- Configurar la autenticación HTTP dentro de : `/var/www/html/allmon2$` y agrega tu contraseña
+### 6.- Configurar la autenticación HTTP dentro de : `/var/www/html/allmon2$` y agrega tu contraseña
 
 ```sh
 sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
@@ -161,7 +125,7 @@ sudo astdb.php
 ```
 <br>
 
-### 9.- Agregar una tarea a crontab :
+### 7.- Agregar una tarea a crontab :
 
 ```sh
 sudo nano /etc/crontab
@@ -175,7 +139,7 @@ sudo nano /etc/crontab
 
 <br>
 
-### 10.- Reiniciar el nodo :
+### 8.- Reiniciar el nodo :
 
 ```sh
 sudo reboot
