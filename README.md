@@ -49,6 +49,9 @@ sudo apt install git -y
 
 ```sh
 cd /var/www/html/
+```
+
+```sh
 sudo git clone https://github.com/gismodes37/allmon2.git
 ```
 <br>
@@ -63,22 +66,20 @@ cd /var/www/html/allmon2
 sudo mv allmon.ini.txt allmon.ini.php
 ```
 
-<br>
-
 ```sh
 sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
-
-<br>
 
 ### 4.- Actualizar referencias en los archivos dentro de : `/var/www/html/allmon2$`
 
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
 ```
+
 ```sh
 sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
 ```
+
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 ```
