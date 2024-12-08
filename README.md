@@ -43,8 +43,6 @@ sudo apt install php libapache2-mod-php -y
 sudo apt install git -y
 ```
 
-<br>
-
 ### 2.- Clonar el repositorio de Allmon2:
 
 ```sh
@@ -53,7 +51,6 @@ cd /var/www/html/
 ```sh
 sudo git clone https://github.com/gismodes37/allmon2.git
 ```
-<br>
 
 ### 3.- Renombrar los siguientes archivos: 
 
@@ -69,21 +66,19 @@ sudo mv allmon.ini.txt allmon.ini.php
 sudo mv controlpanel.ini.txt controlpanel.ini.php
 ```
 
-<br>
-
 ### 4.- Actualizar referencias en los archivos dentro de : `/var/www/html/allmon2$`
 
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/astdb.php
 ```
+
 ```sh
 sudo sed -i 's/Allstar /PTTLink / g' /var/www/html/allmon2/header.inc
 ```
+
 ```sh
 sudo sed -i 's/allstarlink.org/pttlink.org/g' /var/www/html/allmon2/link.php
 ```
-
-<br>
 
 ### 5.- Hacer astdb.php ejecutable dentro de : `/var/www/html/allmon2$`
 
@@ -109,8 +104,6 @@ $url = "https://allstarlink.org/cgi-bin/allmondb.pl";
 $url = "http://allmondb.pttlink.org";
 ```
 
-<br>
-
 ### 6.- Configurar la autenticación HTTP dentro de : `/var/www/html/allmon2$` y agrega tu contraseña
 
 ```sh
@@ -127,7 +120,6 @@ sudo htpasswd -cB /var/www/html/allmon2/.htpasswd admin
 cd /var/www/html/allmon2
 sudo astdb.php
 ```
-<br>
 
 ### 7.- Agregar una tarea a crontab :
 
@@ -141,15 +133,12 @@ sudo nano /etc/crontab
 01 03   * * *   root    cd /var/www/html/allmon2; astdb.php
 ```
 
-<br>
-
 ### 8.- Reiniciar el nodo :
 
 ```sh
 sudo reboot
 ```
 
-<br>
 
 ***
 
@@ -157,7 +146,6 @@ sudo reboot
 
 >Si llegaste a esta etapa, quiere decir que ya lograste instalar Allmon2. Ahora toca configurar la aplicación web para que funcione correctamente y puedas manejar tu nodo.
 
-<br>
 
 ### 1.- Editar el archivo : `allmon.ini.php`
 
