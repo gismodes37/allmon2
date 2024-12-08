@@ -48,6 +48,8 @@ sudo apt install git -y
 ### 2.- Clonar el repositorio de Allmon2:
 
 ```sh
+cd /var/www/html/
+mkdir allmon2
 cd /var/www/html/allmon2
 sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 ```
@@ -63,8 +65,6 @@ sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 >Ahora crea el archivo de la siguiente manera: (De esta manera tambien puedes editar un archivo existente)
 
 ```sh
-cd /var/www/html/
-sudo mkdir allmon2
 cd /var/www/html/allmon2
 sudo nano allmon.ini.txt
 ```
