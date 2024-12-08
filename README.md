@@ -49,6 +49,8 @@ sudo apt install git -y
 
 ```sh
 cd /var/www/html/
+```
+```sh
 sudo git clone https://github.com/gismodes37/allmon2.git
 ```
 <br>
@@ -62,8 +64,6 @@ cd /var/www/html/allmon2
 ```sh
 sudo mv allmon.ini.txt allmon.ini.php
 ```
-
-<br>
 
 ```sh
 sudo mv controlpanel.ini.txt controlpanel.ini.php
