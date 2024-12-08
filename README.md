@@ -63,7 +63,8 @@ sudo git clone https://github.com/gismodes37/Allmon2-2024.git
 >Ahora crea el archivo de la siguiente manera: (De esta manera tambien puedes editar un archivo existente)
 
 ```sh
-cd /var/www/html/allmon2
+cd /var/www/html/
+sudo mkdir allmon2
 sudo nano allmon.ini.txt
 ```
 <br>
