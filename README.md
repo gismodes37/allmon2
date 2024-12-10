@@ -6,7 +6,7 @@
 ## Allmon
 >Allmon es un sitio web para administrar uno o más nodos app_rpt ( también conocido como All Star Link ). Cada nodo local administrado muestra una lista de nodos conectados. La lista está ordenada en orden inverso al nodo recibido más recientemente. Entonces, el último nodo en hablar siempre está al principio de la lista. Cualquier nodo que se esté recibiendo actualmente se resaltará con un fondo verde y se moverá a la parte superior de la lista. La lista de nodos se actualiza una vez por segundo y proporciona un estado casi en tiempo real.
 
-<div align="center" class="separator" style="clear: both;"><a><img alt="" data-original-height="372" data-original-width="783" height="319" src="https://github.com/gismodes37/allmon2/blob/main/Captura%20de%20pantalla%20(57).png" width="661" /></a></div>
+<div align="center" class="separator" style="clear: both;"><a><img alt="" data-original-height="372" data-original-width="783" height="419" src="https://github.com/gismodes37/allmon2/blob/main/Captura%20de%20pantalla%20(57).png" width="761" /></a></div>
 
 ## Notas Previas
 
